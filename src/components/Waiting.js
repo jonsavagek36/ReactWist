@@ -9,6 +9,9 @@ class Waiting extends Component {
   render() {
     return (
       <div>
+        <div className='playersinroom'>
+        </div>
+        <button>Start Game</button>
       </div>
     );
   }
