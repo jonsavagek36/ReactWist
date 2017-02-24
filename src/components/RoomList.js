@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import CreateRoom from './CreateRoom';
+
 class RoomList extends Component {
   constructor(props) {
     super(props);
@@ -9,8 +11,10 @@ class RoomList extends Component {
   render() {
     return (
       <div>
-        Create Room: <input type='text' id='newroom' /><button>submit</button><br />
-        
+        <CreateRoom />
+        <div className='roomlist'>
+        </div>
+        <button>enter room</button>
       </div>
     );
   }
