@@ -24,7 +24,8 @@ class CreateRoom extends Component {
           <label>Room Name: <input type='text' id='newroomname' /></label>
           <label>Private? <input type='checkbox' id='privatecheck' onClick={this.togglePrivate} /></label>
           <div id='password' style={{visibility:this.state.passwordhide}}>Password: <input type='password' id='roompassword' /></div>
-          <input type='submit' value='submit' />
+          <button onClick={this.props.createRoom}>create</button>
+          <div id='createmessage'></div>
         </form>
       </div>
     );

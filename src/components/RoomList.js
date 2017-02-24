@@ -11,7 +11,7 @@ class RoomList extends Component {
   render() {
     return (
       <div>
-        <CreateRoom />
+        <CreateRoom createRoom={this.props.createRoom} />
         <div className='roomlist'>
         </div>
         <button>enter room</button>
